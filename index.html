@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>✦ For You, Always</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts: Playfair Display (heart) + Dancing Script (sparkle) + DM Sans (soul) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@500;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ═══ STAR CANVAS ═══════════════════════════════════════════ -->
+    <canvas id="starCanvas"></canvas>
+
+    <!-- ═══ MOON ══════════════════════════════════════════════════ -->
+    <div class="moon" id="moon">
+      <div class="moon-glow"></div>
+      <div class="moon-surface"></div>
+    </div>
+
+    <!-- ═══ PASSWORD GATE ════════════════════════════════════════ -->
+    <div id="gateScreen" class="screen gate-screen active">
+      <div class="gate-content">
+        <div class="gate-ornament">✦</div>
+        <h1 class="gate-title">For my dearest Akka!</h1>
+        <p class="gate-subtitle">a small memorial page</p>
+        <div class="gate-form">
+          <div class="input-wrapper" id="inputWrapper">
+            <input
+              type="password"
+              id="passwordInput"
+              class="gate-input"
+              placeholder="our secret key…"
+              maxlength="20"
+              autocomplete="off"
+              inputmode="numeric"
+            />
+            <div class="input-underline"></div>
+          </div>
+          <p class="gate-error" id="gateError">
+            hmm, Thappu ka!!! — nalla yosinga! ♡
+          </p>
+          <button class="gate-btn" id="unlockBtn">
+            <span class="btn-text">Open</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </div>
+
+        <p class="gate-hint">you know this one!</p>
+      </div>
+    </div>
+
+    <!-- ═══ MAIN APP ══════════════════════════════════════════════ -->
+    <div id="app" class="app hidden">
+      <!-- HOME VIEW -->
+      <div id="viewHome" class="view active-view">
+        <!-- Hero -->
+        <section class="hero-section" id="heroSection">
+          <div class="hero-media">
+            <img
+              src="img/fav.jpeg"
+              alt="Hero"
+              class="hero-img"
+              onerror="this.parentElement.classList.add('hero-placeholder')"
+            />
+          </div>
+          <div class="hero-overlay"></div>
+          <div class="hero-text">
+            <p class="hero-label">our journey ♡</p>
+            <h2 class="hero-name">Moon and the Monkey</h2>
+          </div>
+        </section>
+
+        <!-- Thoughts -->
+        <section class="thoughts-section">
+          <div class="section-header">
+            <span class="section-ornament">♡</span>
+            <h2 class="section-title">Things I Want You to Know</h2>
+          </div>
+          <div class="thoughts-grid" id="thoughtsGrid"></div>
+        </section>
+
+        <!-- Special Video -->
+        <section class="video-section">
+          <div class="section-header">
+            <span class="section-ornament">✦</span>
+            <h2 class="section-title">A Moment to Remember</h2>
+          </div>
+          <div class="video-wrapper">
+            <video id="specialVideo" controls playsinline preload="metadata">
+              <source src="ADD_SPECIAL_VIDEO_HERE" type="video/mp4" />
+              <p class="video-fallback">Your browser doesn't support video.</p>
+            </video>
+            <div class="video-placeholder-overlay" id="videoPlaceholder">
+              <span class="video-placeholder-icon">▶</span>
+              <p>your special video goes here</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- /viewHome -->
+
+      <!-- GALLERY VIEW -->
+      <div id="viewGallery" class="view hidden-view">
+        <div class="gallery-header">
+          <span class="section-ornament">⬡</span>
+          <h2 class="section-title">Our Gallery</h2>
+          <p class="gallery-subtitle">every frame, a forever ♡</p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+
+      <!-- BOTTOM NAV -->
+      <nav class="bottom-nav" id="bottomNav">
+        <button class="nav-item active" data-view="home" aria-label="Home">
+          <span class="nav-icon">⌂</span>
+          <span class="nav-label">Home</span>
+        </button>
+        <button class="nav-item" data-view="gallery" aria-label="Gallery">
+          <span class="nav-icon">✦</span>
+          <span class="nav-label">Gallery</span>
+        </button>
+        <button class="nav-item" data-view="music" aria-label="Music">
+          <span class="nav-icon">♪</span>
+          <span class="nav-label">Music</span>
+        </button>
+      </nav>
+    </div>
+    <!-- /app -->
+
+    <!-- MUSIC MODAL -->
+    <div
+      id="musicModal"
+      class="music-modal hidden"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="music-backdrop" id="musicBackdrop"></div>
+      <div class="music-panel">
+        <div class="music-panel-header">
+          <h3 class="music-title">♡ Our Playlist</h3>
+          <button class="music-close" id="musicClose" aria-label="Close">
+            ✕
+          </button>
+        </div>
+
+        <div class="now-playing" id="nowPlaying">
+          <div class="np-disc" id="npDisc"><span class="np-note">♪</span></div>
+          <div class="np-info">
+            <p class="np-song" id="npSong">pick a song ♡</p>
+            <p class="np-status" id="npStatus">—</p>
+          </div>
+        </div>
+
+        <div class="progress-container">
+          <span class="time-label" id="timeElapsed">0:00</span>
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-thumb" id="progressThumb"></div>
+          </div>
+          <span class="time-label" id="timeDuration">0:00</span>
+        </div>
+
+        <div class="player-controls">
+          <button class="ctrl-btn" id="prevBtn" aria-label="Previous">
+            ⏮
+          </button>
+          <button
+            class="ctrl-btn play-btn"
+            id="playPauseBtn"
+            aria-label="Play/Pause"
+          >
+            ▶
+          </button>
+          <button class="ctrl-btn" id="nextBtn" aria-label="Next">⏭</button>
+        </div>
+
+        <div class="volume-row">
+          <span class="vol-icon">🔈</span>
+          <input
+            type="range"
+            id="volumeSlider"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.05"
+            value="0.8"
+          />
+          <span class="vol-icon">🔊</span>
+        </div>
+
+        <ul class="song-list" id="songList" role="listbox"></ul>
+      </div>
+    </div>
+
+    <!-- Persistent audio -->
+    <audio id="audioPlayer" preload="metadata"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
