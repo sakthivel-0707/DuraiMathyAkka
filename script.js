@@ -25,17 +25,46 @@
 ══════════════════════════════════════════════ */
 
 /** Unlock password */
-const PASSWORD = "01062024";
-
+// const PASSWORD = "01062024";
+const PASSWORD = "0";
 /**
  * Emotional lines shown on the home page.
  * Replace ADD_YOUR_TEXT_HERE with real words.
  */
 const thoughtsData = [
-  { line: "ADD_YOUR_TEXT_HERE" },
-  { line: "ADD_YOUR_TEXT_HERE" },
-  { line: "ADD_YOUR_TEXT_HERE" },
-  { line: "ADD_YOUR_TEXT_HERE" },
+  {
+    line: "Hi ka! Inniku tha last day of college la 🫠... Kastama tha eruku ka, Akka akka nu romba dependent ah maaritana ippo inumeyl akka eruka maatanga nu yosikum pothu kastama eruku ka 😭 Neraya best memories kuduthurukenga ka✨ungalukey therium ka, ennaku ungala na romba pudikum nu, but yea ethuku nu avlo theriuma nu theriyala, so sollura kealunga ka...🫡 ",
+  },
+  {
+    line: "Naama first eppo peasunom nu theriuma ka? 😅 Naa sollirupa instagram la first june 1 tha msg pota ka nu, but enaku therinja vara naa first ungata peasunathu yennoda birthday ku ka... 1st year la vachi peasuna, ennoda 19th birthday 😌, neenga epothum maari thongitu erunthinga ka van la😅, akka nu elupi unga stop varathuku konja munadi 5 star kudutha, akka inniku birthday ka nu.. neengalum sirichitey wish pannenga.. Itha enaku therinja vara first time naama peasunathu ka 😌, athuku appro tha oru visiyathunaala official ah ungata vanthu peasuna akka help nu 🫠... athula oru kaalam ka, antha edathula tha neraya adi vanguna ka yea life la... antha time la tha enaku romba help theava pattuchi 🤧 appo tha neenga theivam🙏 maari vanthenga ka!",
+  },
+  {
+    line: "Naa konjam loose ka (nerayavey😅) , rejection ah eathuka theriyala, naa enna avlo mosamava eruka, naa enna waste ah? apdinu ennayea naaney demotivate pannikita ka 🤧, ippo nenachi paatha athu sakthiya nu shock ah eruku ka enakey 🫠 evlo mosamana situation la eruntha na, yea face ah ennalayea paaka mudiyala ka mirror la, romba depressed aaita, 🥲 depression na enna nu kathukittan ka, romba kodumai ka, clg varavey pudikathu, vanthalum romba kastama erukum ka.. antha time la tha enaku romba help panna start pannenga ka! 🤧🙏",
+  },
+  {
+    line: "Ungalukey therium lite ah, naa van la aluthuruka nu 🥲,but ungaluku theriyama lu neraya thadava aluthuruka ka 😭, unga pinnadi eppola paduthu kedakano, appo naa alurathuku chance neraya eruku ka 🥲, apdi alum pothu la unga pinnadi thana ka erupa, appola unga pinnadi sanji alum pothu oru confort kedaikum ka, ❤️‍🩹 atha epdi solla nu theriyala, ippo chinna pilla keela veluntha amma nu poi madila paduthu alum pothu oru comfort kedaikum la athu maari ka,💖 ungalukey theriuma apdi oru comfort ah anuvachita erunthu 😅enaku apdi entha kastama erunthalum unga pinnadi sanjitu poha pudikum ka. athukula romba thanks ka, 🥹 aluha vantha nu mattum illa, seriya thongala na, thalavali na, apdi enna problem naalum sanji thonga pudikum ka! Antha comfort ah la romba miss pannuva ka 😭 appo appo vanthu unga madila paduthu aluthukura ka 🤧",
+  },
+  {
+    line: "Appro, neenga enna kandikurathu pudikum ka 🎀, urimai oda thituvenga sandaiku varuvenga, athula nalla erukum ka 🥲, evlo akkaraya nu oru happiness erukum, veetla kooda konjam thanni tholichi vitanga ka 🤧 pathuka maatanga nu illa, but night thoongala na thittu, sapdalana thittu nu paaka maatanga 😅, aana Neenga paathenga ka 🥹 Yenna chinna pillaila epdi amma pathangalo apdi paathenga! Sapdalana thittuvenga, sapadu kondu varathula ippo kuda aluhaya varuthu ka 😫 anniku culturals ku la romba udambu mudiyala ka, night vera yarum illaya, romba kaachal ka, amma va theada aarambichita ka 🤧, amma eruntha nalla erukumey nu eruntha ka, appo tha ungata msg potu akka tablet eruntha thanga ka nu keata 🥲 neenga tablet kondu vanthu, naa sapturuka maata nu sapadula kondu vanthu 😭😭😭 ammava vey maaritenga ka 🫂, athuku la epdi kaimaru seiya pora nu theriyala ka 🥲",
+  },
+  {
+    line: "Ungala pathi uh neraya kathukitta ka 😅 neenga avlo emotions ah express eh panna maatenga, vera strong ah act pannuvenga aana basement weak nu later ah purinjikitan 😅 appro ungaluku aarthal sollavey varathu ka 😒 athuku meaning kuda theriyathu, aanalum try pannenga ka enakaha 🤧 naa sad ah erukuratha paathu ungaluku therinja maari aarthal kuduthinga 🫂... Shock enna na athu work aaitu 😅 ungata healing properties neraya eruku ka 😌",
+  },
+  {
+    line: "Yenakula ungala pathi peasa romba proud ah erukum ka 😌✨ chance kedacha evlo bantha poduva Theriuma 😤 ungala pathi peasitey erupa! Yea akka idpi apdi nu 😅 neenga avlo worth ka! Unga worth konjam konjama enaku purinjathum tha! Cha enaku ipdi paasatha kaata oru akka erukum pothu, vera ponnoda pasatha theaditu erukomey nu guilt aaitu ka 🥲... Naa evlo kuduthu vachava nu purinjikitan ka 🤧 ipdi la Yaruku akka kedaipa sollunga? Yaruney theriyatha payanu kaha asinga pattu appovum vitu kudukama sanda potu 🫠 yea pilla nu la antha ponnuta sandaiku ponenga ka 🤧 konjam konjama purinjikitan ka, akka ku sakthi na yaru nu 🥲 athey maari sakthi oda akka na yaru num 🧿😌",
+  },
+  {
+    line: "Ungala romba kasta paduthiruka, asingam la paduthiruka ka, aanalum enna vitu pohama kodayea erunthinga ka 🥲🫂 Akka na meaning enna nu kamichinga ka 🤧 ungala perma paduthu kaatanum nu romba aasa ka 🥲 naa daily vanthu solluvan la! Akka naa ipdi panna apdi panna nu? Actually atha ungata mattum tha solli scene poduva Theriuma? Veetla koda sonnathu illa 😅 yeanna pathi veetla yarukum theriyathu 🥲... ungata naa pannura achievements ah la kaati peruma paduthanum nu apdi aasa ka! 😌💗 Athey maari ungaluku pudicha elathaum vangi kudukanum nu aasa, ungaluku na evlo pannalum pothathu maarey erukum ka 🥲 future la uh mudinja vara try pannura ka!  Unga expectations ah la yea meala podunga 😌🙌",
+  },
+  {
+    line: "Nalla padika ka! Padichu nalla job ku pora 🫡 poi ella list ah uh complete pannura ka! 🙌 Audi car kuda vangura ka! Oyama vanthu polamba maata! Neenga sollura petchala keaka ka 🫠 neenga keakura thambi ah eruka ka 🥲 enna matum vittu poirathinga ka 😭😭😭 kandipa future la ethathu thappu pannuva, ethum panna enna adinga ka, vitutu poirathinga ok ya? 🤧 Manasu odanji poiruva ka, nengaillana yaru ka enna paathupa? 😭",
+  },
+  {
+    line: "Ungala romba miss pannuva ka, oru naaliku 100 thadavayathu akka nu vaila varuthu 🥲, neenga illana kastam tha ka, appo appo call panunga ka enaku 🥲🤧 naa daily msg podura ka 🫠🙌 epothum maari erupom ka! Neengalum serichitey erunga ka! Paaka alaha erupenga ka 😌🙌 ah naa paatha ponnoda neenga alahu tha othukura 😅😌, epothum unga standards ah vitu kudukathinga ka! Naa ungala nalla pathukita nu nenaiken 🥲🙏 eppo enna help naalum first unga thambi tha varanum ka!!!! 😤 Happy ah erunga! Yea kodayea erunga ka! Luv u amma! 🥲🫂💗",
+  },
+  {
+    line: "Remember! 🫵👸🏻",
+  },
 ];
 
 /**
@@ -47,33 +76,73 @@ const thoughtsData = [
 const galleryData = [
   {
     mediaType: "image",
-    src: "assets/images/sample.jpg",
-    text: "ADD_MEMORY_TEXT",
+    src: "assets/img/yeabd.jpeg",
+    text: "♡ Yea 20th birthday ah marakavey maata ka, atha spl aakuna theivam neenga! ungalaum maaraka maata! first time cake cutting all thanks to my dear sister",
   },
   {
     mediaType: "image",
-    src: "assets/images/sample2.jpg",
-    text: "ADD_MEMORY_TEXT",
-  },
-  {
-    mediaType: "video",
-    src: "assets/videos/sample.mp4",
-    text: "ADD_MEMORY_TEXT",
+    src: "assets/img/juice.jpeg",
+    text: "♡ Bus era theriyala akka ku 😅, always free rapido service available ka!",
   },
   {
     mediaType: "image",
-    src: "assets/images/sample3.jpg",
-    text: "ADD_MEMORY_TEXT",
+    src: "assets/img/nightrain.jpeg",
+    text: "♡ Naama first time thaniya velila ponom, nalla fun pannom ka! neavaham eruka? 😅 erunthalum namaku kolupu athigam",
   },
   {
     mediaType: "image",
-    src: "assets/images/sample4.jpg",
-    text: "ADD_MEMORY_TEXT",
+    src: "assets/img/mybdstory.jpeg",
+    text: "♡ One of my favourite pics ka, inniku tha first time namma veetuku vanthenga ",
   },
   {
     mediaType: "image",
-    src: "assets/images/sample5.jpg",
-    text: "ADD_MEMORY_TEXT",
+    src: "assets/img/homecook.jpeg",
+    text: "♡ First time yea cooking skills ah neral paathinga 😎, aniku nalla erunthuchi ka",
+  },
+  {
+    mediaType: "image",
+    src: "assets/img/bdtreat.jpeg",
+    text: "♡ unga birthday anniku! yea first gift nu nenaike ungaluku kudutha drawing",
+  },
+  // {
+  //   mediaType: "video",
+  //   src: "assets/videos/sample.mp4",
+  //   text: "ADD_MEMORY_TEXT",
+  // },
+  {
+    mediaType: "image",
+    src: "assets/img/homeout.jpeg",
+    text: "♡ Second time cook pannapo eduthatu, first time oda yea cooking ah sapda neray fans vanthurunthanga 😎",
+  },
+  {
+    mediaType: "image",
+    src: "assets/img/kaalan.jpeg",
+    text: "♡ Vm chatram la kaalan kadaila sapta appo eduthathu, inniku oruthangaluku whatsapp la msg la pota 😅",
+  },
+  {
+    mediaType: "image",
+    src: "assets/img/kapayaluga.jpeg",
+    text: "♡ Onna cards velayandom anniku, bus ah maraka maata ka, oru kaalathula athu vedu maari feel aachi! reason 🫵",
+  },
+  {
+    mediaType: "image",
+    src: "assets/img/newyear.jpeg",
+    text: "♡ new year celebarate pannom! cake la vangi thantenga ka 😅",
+  },
+  {
+    mediaType: "image",
+    src: "assets/img/mehndi.jpeg",
+    text: "♡ Nalla mehandi poda kathukura ka! unga marrieage ku naa tha podura!!!",
+  },
+  {
+    mediaType: "image",
+    src: "assets/img/sympos.jpeg",
+    text: "♡ naama first time pona symposium ka! yea dept eh kedayathu aana unga koda time spend pannanumney vantha anniku 😅",
+  },
+  {
+    mediaType: "image",
+    src: "assets/img/cars.jpeg",
+    text: "♡ he he he",
   },
 ];
 
@@ -447,7 +516,7 @@ function renderThoughts() {
     card.className = "thought-card fade-up";
     card.style.transitionDelay = `${i * 0.08}s`;
     card.innerHTML = `
-      <p class="thought-num">♡ ${String(i + 1).padStart(2, "0")}</p>
+      <p class="thought-num">♡ </p>
       <p class="thought-line">${escapeHTML(t.line)}</p>
     `;
     grid.appendChild(card);
@@ -480,7 +549,6 @@ function initVideoSection() {
     const card = document.createElement("article");
     card.className = "gallery-card fade-up";
     card.style.transitionDelay = `${(i % 3) * 0.1}s`;
-
     card.innerHTML = `
       <div class="card-media">${buildMediaEl(item, i)}</div>
       <div class="card-body">
@@ -561,7 +629,7 @@ function buildMediaEl(item, i) {
     if (index < 0 || index >= musicList.length) return;
     state.audio.currentIndex = index;
     const song = musicList[index];
-    audio.src = `audio/${song.file}`;
+    audio.src = `assets/audio/${song.file}`;
     audio.load();
     audio.play().catch((err) => {
       console.warn("Audio play failed:", err);
