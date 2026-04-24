@@ -25,8 +25,8 @@
 ══════════════════════════════════════════════ */
 
 /** Unlock password */
-// const PASSWORD = "01062024";
-const PASSWORD = "0";
+const PASSWORD = "01062024";
+// const PASSWORD = "0";
 /**
  * Emotional lines shown on the home page.
  * Replace ADD_YOUR_TEXT_HERE with real words.
